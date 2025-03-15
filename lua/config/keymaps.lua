@@ -1,6 +1,13 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+
+local map = LazyVim.safe_keymap_set
+
+----EDITOR-----
+map("n", "<c-ñ>",      function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
+map("t", "<C-ñ>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
 ----- OIL -----
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
