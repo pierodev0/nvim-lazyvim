@@ -8,5 +8,5 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## Clonar
 
 ```
-git clone https://github.com/pierodev0/lazyvim-config ~/.config/nvim
+git clone git@github.com:pierodev0/lazyvim-config.git ~/.config/nvim
 ```
