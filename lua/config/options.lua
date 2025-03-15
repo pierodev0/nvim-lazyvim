@@ -4,3 +4,5 @@
 
 -- Disable LazyVim auto formatvim.g.autoformat = false
 vim.g.autoformat = false
+-- Enable wrap
+vim.opt.wrap = true
