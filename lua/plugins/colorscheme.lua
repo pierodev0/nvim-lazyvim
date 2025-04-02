@@ -1,13 +1,19 @@
 return {
     -- Lazy
     {
-        "olimorris/onedarkpro.nvim",
-        priority = 1000, -- Ensure it loads first
-    },
-    {
+        "AstroNvim/astrotheme",
+        lazy = false,
+        priority = 1000,
+        opts = {
+          palette = "astrodark",
+        },
+      },
+      {
+        -- LazyVim configuration
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "onedark",
+          -- Set the default color scheme
+          colorscheme = "astrodark",
         },
-    },
+      },
 }
