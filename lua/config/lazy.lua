@@ -25,8 +25,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.snacks_picker" },
 
     -- Formatting plugins
-    { import = "lazyvim.plugins.extras.formatting.biome" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
+    -- { import = "lazyvim.plugins.extras.formatting.biome" },
+    -- { import = "lazyvim.plugins.extras.formatting.prettier" },
 
     -- Linting plugins
     { import = "lazyvim.plugins.extras.linting.eslint" },
