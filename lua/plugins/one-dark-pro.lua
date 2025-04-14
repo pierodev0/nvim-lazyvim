@@ -11,6 +11,7 @@ return {
         },
 
         highlights = {
+          -- Javascript and jsx
           ["@tag.attribute.javascript"] = { fg = "${orange}", italic = true },
           ["@tag.javascript"] = { fg = "${yellow}" },
           ["@tag.builtin.javascript"] = { fg = "${red}" },
@@ -21,6 +22,10 @@ return {
           ["@markup.heading.5.javascript"] = { fg = "${white}" },
           ["@lsp.typemod.variable.readonly.javascriptreact"] = { fg = "${yellow}" },
           ["@function.method.call.javascript"] = { fg = "${blue}" },
+
+          -- Neo tree
+          NeoTreeDirectoryIcon = { fg = "${blue}" },
+          NeoTreeRootName = { fg = "${white}" },
         },
       })
     end,
