@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 -- Disable LazyVim auto formatvim.g.autoformat = false
-vim.g.autoformat = true
+vim.g.autoformat = false
 -- Enable wrap
 vim.opt.wrap = true
+
