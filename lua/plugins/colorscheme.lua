@@ -1,4 +1,4 @@
-if truen then
+if true then
   return {}
 end
 return {
