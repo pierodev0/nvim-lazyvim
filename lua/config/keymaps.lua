@@ -5,11 +5,11 @@
 local map = LazyVim.safe_keymap_set
 
 ----EDITOR-----
-map("n", "<c-ñ>",      function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
-map("t", "<C-ñ>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+map("n", "<F7>",      function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
+map("t", "<F7>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 
 ----- OIL -----
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Delete all buffers but the current one
 vim.keymap.set(
