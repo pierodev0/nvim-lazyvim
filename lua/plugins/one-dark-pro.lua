@@ -19,13 +19,14 @@ return {
           ["@markup.heading.2.javascript"] = { fg = "${white}" },
           ["@markup.heading.3.javascript"] = { fg = "${white}" },
           ["@markup.heading.4.javascript"] = { fg = "${white}" },
-          ["@markup.heading.5.javascript"] = { fg = "${white}" },
+          ["@markup.heading.w5.javascript"] = { fg = "${white}" },
           ["@lsp.typemod.variable.readonly.javascriptreact"] = { fg = "${yellow}" },
           ["@function.method.call.javascript"] = { fg = "${blue}" },
 
           -- Neo tree
           NeoTreeDirectoryIcon = { fg = "${blue}" },
           NeoTreeRootName = { fg = "${white}" },
+          NeoTreeTitleBar = { fg = "${bg}", bg = "${blue}"},
         },
       })
     end,
