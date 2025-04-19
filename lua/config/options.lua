@@ -6,4 +6,6 @@
 vim.g.autoformat = false
 -- Enable wrap
 vim.opt.wrap = true
+-- Config for minute-ai
+-- vim.g.lazyvim_blink_main = true
 
