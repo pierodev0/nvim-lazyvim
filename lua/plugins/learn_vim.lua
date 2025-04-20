@@ -4,9 +4,4 @@ return {
     dependencies = { "MunifTanjim/nui.nvim" },
     opts = {},
   },
-  -- {
-  --   "tris203/precognition.nvim",
-  --   --event = "VeryLazy",
-  --   opts = {},
-  -- },
 }
