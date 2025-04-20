@@ -31,12 +31,4 @@ return {
       })
     end,
   },
-  {
-    -- LazyVim configuration
-    "LazyVim/LazyVim",
-    opts = {
-      -- Set the default color scheme
-      colorscheme = "onedark_vivid",
-    },
-  },
 }

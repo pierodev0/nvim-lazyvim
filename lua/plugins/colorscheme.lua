@@ -1,22 +1,20 @@
-if true then
-  return {}
-end
 return {
-    -- Lazy
+  {
+    { "Mofiqul/vscode.nvim", lazy = true },
     {
-        "AstroNvim/astrotheme",
-        lazy = false,
-        priority = 1000,
-        opts = {
-          palette = "astrodark",
-        },
+      "AstroNvim/astrotheme",
+      lazy = true,
+      opts = {
+        palette = "astrodark",
       },
-      {
-        -- LazyVim configuration
-        "LazyVim/LazyVim",
-        opts = {
-          -- Set the default color scheme
-          colorscheme = "astrodark",
-        },
+    },
+    {
+      -- LazyVim configuration
+      "LazyVim/LazyVim",
+      opts = {
+        -- Set the default color scheme
+        colorscheme = "onedark_vivid",
       },
+    },
+  },
 }
