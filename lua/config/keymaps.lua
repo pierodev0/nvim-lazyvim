@@ -7,9 +7,9 @@ local map = LazyVim.safe_keymap_set
 ----EDITOR-----
 map("n", "<F7>",      function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
 map("t", "<F7>", "<cmd>close<cr>", { desc = "Hide Terminal" })
-
+vim.keymap.set("n", "ycc", "yygccp", { remap = true })
 ----- OIL -----
--- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Delete all buffers but the current one
 vim.keymap.set(
