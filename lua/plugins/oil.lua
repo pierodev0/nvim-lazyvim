@@ -26,6 +26,7 @@ return {
       ["g\\"] = "actions.toggle_trash", -- Toggle trash
     },
     use_default_keymaps = false, -- Do not use default key mappings
+    skip_confirm_for_simple_edits = true,
   },
 
   -- Optional dependencies
