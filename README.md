@@ -10,13 +10,13 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ```
 git clone https://github.com/pierodev0/nvim-lazyvim.git ~/.config/nvim
 
-#Windows
+# Windows
 git clone --depth 1 https://github.com/pierodev0/nvim-lazyvim.git $env:LOCALAPPDATA\nvim
 ```
 
 ## Clean nvim
 ```
-#Windows
+# Windows
 Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim
 Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim-data
 ```
