@@ -8,5 +8,15 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## Clonar
 
 ```
-git clone git@github.com:pierodev0/lazyvim-config.git ~/.config/nvim
+git clone https://github.com/pierodev0/nvim-lazyvim.git ~/.config/nvim
+
+#Windows
+git clone --depth 1 https://github.com/pierodev0/nvim-lazyvim.git $env:LOCALAPPDATA\nvim
+```
+
+## Clean nvim
+```
+#Windows
+Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim
+Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim-data
 ```
