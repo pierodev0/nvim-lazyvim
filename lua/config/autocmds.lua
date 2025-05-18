@@ -61,4 +61,19 @@ vim.keymap.set('n', '<leader>ut', function()
     vim.opt.relativenumber = false
   end
 end, { desc = "Toggle signcolumn, number y relativenumber" })
+local lualine_enabled = true
+
+function ToggleLualine()
+  if lualine_enabled then
+    require('lualine').hide()
+    lualine_enabled = false
+  else
+    -- Aquí está la corrección: hay que pasar una tabla con unhide=true
+    require('lualine').hide({unhide=true})
+    lualine_enabled = true
+  end
+end
+
+-- Mantén tu keymapping
+vim.api.nvim_set_keymap('n', '<leader>tl', ':lua ToggleLualine()<CR>', { noremap = true, silent = true })
 
