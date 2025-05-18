@@ -1,9 +1,9 @@
 return {
-  {
-    "m4xshen/hardtime.nvim",
-    dependencies = { "MunifTanjim/nui.nvim" },
-    opts = {},
-  },
+  -- {
+  --   "m4xshen/hardtime.nvim",
+  --   dependencies = { "MunifTanjim/nui.nvim" },
+  --   opts = {},
+  -- },
   {
     "tris203/precognition.nvim",
     dependencies = { "folke/snacks.nvim" }, -- Asegurarse de que snacks.nvim sea una dependencia
