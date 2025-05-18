@@ -1,11 +1,6 @@
--- En tu configuración de lazy.nvim
+if true then return {} end
 return {
   "folke/snacks.nvim",
-  opts = {
-    toggle = {
-      -- Configuración por defecto del toggle
-    }
-  },
   config = function()
     -- Crear un toggle personalizado para signcolumn y numeración de líneas
     Snacks.toggle({
@@ -29,6 +24,5 @@ return {
         end
       end,
     }):map("<leader>ut") -- Asigna el atajo de teclado para el toggle
-  end
+  end,
 }
-
