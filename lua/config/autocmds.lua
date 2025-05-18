@@ -47,7 +47,7 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 -- Togle para quitar signcolumn, number y relative number
-local toggle_state = false
+local toggle_state = true
 
 vim.keymap.set('n', '<leader>ut', function()
   toggle_state = not toggle_state
