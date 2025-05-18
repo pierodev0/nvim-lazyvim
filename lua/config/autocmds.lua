@@ -46,4 +46,19 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.keymap.set("n", "gt", toggle_keymaps, { buffer = bufnr, nowait = true, desc = "Toggle keymaps h/l in oil" })
 	end,
 })
+-- Togle para quitar signcolumn, number y relative number
+local toggle_state = false
+
+vim.keymap.set('n', '<leader>ut', function()
+  toggle_state = not toggle_state
+  if toggle_state then
+    vim.opt.signcolumn = "yes"
+    vim.opt.number = true
+    vim.opt.relativenumber = true
+  else
+    vim.opt.signcolumn = "no"
+    vim.opt.number = false
+    vim.opt.relativenumber = false
+  end
+end, { desc = "Toggle signcolumn, number y relativenumber" })
 
