@@ -41,18 +41,18 @@ return {
         },
       },
     },
-    {
-      "folke/flash.nvim",
-      keys = {
-        -- disable the default flash keymap
-        { "s", mode = { "n", "x", "o" }, false },
-        { "<leader-,>", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-      },
-    },
-    {
-      "folke/snacks.nvim",
-    keys = {
-      {"<leader>,", false }
-    }
-    }
+    -- {
+    --   "folke/flash.nvim",
+    --   keys = {
+    --     -- disable the default flash keymap
+    --     { "s", mode = { "n", "x", "o" }, false },
+    --     { "<leader-,>", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+    --   },
+    -- },
+    -- {
+    --   "folke/snacks.nvim",
+    -- keys = {
+    --   {"<leader>,", false }
+    -- }
+    -- }
   }
