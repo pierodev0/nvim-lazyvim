@@ -4,7 +4,18 @@ return {
   "saghen/blink.cmp",
   opts = {
     keymap = {
-      ["<Tab>"] = { "select_next", "fallback_to_mappings" },
+      -- ["<Tab>"] = { "select_next", "fallback_to_mappings" },
+      ["<Tab>"] = {
+        function(cmp)
+          if cmp.snippet_active() then
+            return cmp.accept()
+          else
+            return cmp.select_and_accept()
+          end
+        end,
+        "snippet_forward",
+        "fallback",
+      },
       -- Ctrl + K: Select the previous suggestion
       ["<C-k>"] = { "select_prev", "fallback_to_mappings" },
       -- Ctrl + J: Select the next suggestion
