@@ -6,8 +6,8 @@ return {
       lazy = false,
       priority = 1000,
     },
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    {"rebelot/kanagawa.nvim"},
+    { "catppuccin/nvim", name = "catppuccin"},
+    { "rebelot/kanagawa.nvim" },
     {
       "AstroNvim/astrotheme",
       lazy = true,
@@ -20,7 +20,7 @@ return {
       "LazyVim/LazyVim",
       opts = {
         -- Set the default color scheme
-        colorscheme = "vscode",
+        -- colorscheme = "vscode",
       },
     },
   },
