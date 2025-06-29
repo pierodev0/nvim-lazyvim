@@ -1,3 +1,4 @@
+if true then return {} end
 -- Reference : https://github.com/ArinFaraj/nvim-config/blob/lazy/lua/plugins/flutter.lua
 local function list_insert_unique(dst, src)
   if not dst then
