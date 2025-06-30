@@ -61,7 +61,7 @@ if lazyvim_docs then
   
   return {
     {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       opts = { ensure_installed = { "prettierd" } },
     },
   
