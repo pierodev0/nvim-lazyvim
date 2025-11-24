@@ -18,7 +18,7 @@ return {
       "LazyVim/LazyVim",
       opts = {
         -- Set the default color scheme
-        -- colorscheme = "vscode",
+        colorscheme = "vscode",
       },
     },
   },
