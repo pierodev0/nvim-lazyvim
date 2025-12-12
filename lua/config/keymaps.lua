@@ -5,12 +5,14 @@
 local map = LazyVim.safe_keymap_set
 local opts = { noremap = true, silent = true }
 ----EDITOR-----
--- map("n", "<F7>",      function() Snacks.terminal() end, { desc = "Terminal (Root Dir)" })
+map("n", "<F7>",      function() Snacks.terminal() end, { desc = "Terminal (Root Dir)" })
 map("n", "<leader>tq", ":TermNew layout=below<CR>", opts)
 map("n", "<leader>tw", ":TermNew layout=right<CR>", opts)
 map("n", "<leader>tf", ":TermNew layout=float<CR>", opts)
-
 map("n", "<leader>tl", ":TermSelect<CR>", opts)
+
+-- vim.keymap.del({"n","t"}, "<C-/>")
+-- vim.keymap.del({"n","t"}, "<C-_>")
 
 map("t", "<F7>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 vim.keymap.set("n", "ycc", "yygccp", { remap = true })
@@ -47,3 +49,5 @@ function SaveFile()
     vim.notify("Error: " .. err, vim.log.levels.ERROR) -- Show the error message if it fails
   end
 end
+vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
