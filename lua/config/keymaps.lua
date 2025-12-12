@@ -3,9 +3,15 @@
 -- Add any additional keymaps here
 
 local map = LazyVim.safe_keymap_set
-
+local opts = { noremap = true, silent = true }
 ----EDITOR-----
-map("n", "<F7>",      function() Snacks.terminal() end, { desc = "Terminal (Root Dir)" })
+-- map("n", "<F7>",      function() Snacks.terminal() end, { desc = "Terminal (Root Dir)" })
+map("n", "<leader>tq", ":TermNew layout=below<CR>", opts)
+map("n", "<leader>tw", ":TermNew layout=right<CR>", opts)
+map("n", "<leader>tf", ":TermNew layout=float<CR>", opts)
+
+map("n", "<leader>tl", ":TermSelect<CR>", opts)
+
 map("t", "<F7>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 vim.keymap.set("n", "ycc", "yygccp", { remap = true })
 ----- OIL -----

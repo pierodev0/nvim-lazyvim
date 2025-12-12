@@ -10,7 +10,7 @@ vim.opt.wrap = true
 -- vim.g.lazyvim_blink_main = true
 
 vim.opt.breakindent = true
-
+vim.opt.exrc = true
 -- Configurar pwsl por defecto en windows
 -- Referencia: https://github.com/LazyVim/LazyVim/issues/2151#issuecomment-1888294994
 if jit.os == 'Windows' then
